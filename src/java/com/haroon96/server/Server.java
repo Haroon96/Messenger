@@ -2,6 +2,7 @@ package com.haroon96.server;
 
 import com.haroon96.common.Message;
 
+import javax.swing.*;
 import java.awt.*;
 import java.io.*;
 import java.net.DatagramPacket;
@@ -11,24 +12,34 @@ import java.net.Socket;
 import java.nio.ByteBuffer;
 import java.util.ArrayList;
 
-public class Server {
+public class Server extends JFrame {
 
 	public static void main(String[] args) {
-		System.out.println("Server is running...");
-		new Server().startServer();
+		Server server = new Server();
+		server.setVisible(true);
+		server.startServer();
 	}
 
-	public Server() {
+	private void initWindow() {
+		add(new JLabel("Server is running", JLabel.CENTER));
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		setSize(300, 300);
+	}
+
+	private Server() {
 		messagePool = new ArrayList<>();
 		usernames = new ArrayList<>();
 		outputStreams = new ArrayList<>();
 		try {
 			address = InetAddress.getByName("224.2.2.3");
+		} catch(Exception e) {
+			System.out.println(e);
 		}
-		catch(Exception e){ System.out.println(e); }
+
 		port = 8888;
-		ClientSender cs = new ClientSender();
-		cs.start();
+		new ClientSender().start();
+
+		initWindow();
 	}
 
 	public void startServer() {
