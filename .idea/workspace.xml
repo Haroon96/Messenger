@@ -12,7 +12,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ChatFrame.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ChatFrame.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/java/com/haroon96/client/gui/ChatFrame.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
@@ -87,29 +87,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Server.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Server.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/java/com/haroon96/server/Server.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="592">
-              <caret line="157" selection-start-line="157" selection-end-line="157" />
+            <state relative-caret-position="170">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ServerDriver.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/java/com/haroon96/driver/ServerDriver.java">
+      <file leaf-file-name="ClientMain.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/java/com/haroon96/client/ClientMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ClientDriver.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/java/com/haroon96/driver/ClientDriver.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="68">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
               <folding>
                 <element signature="e#132#133#0" expanded="true" />
                 <element signature="e#168#169#0" expanded="true" />
@@ -155,11 +146,14 @@
         <option value="$PROJECT_DIR$/src/java/com/haroon96/client/gui/UIElements.java" />
         <option value="$PROJECT_DIR$/src/java/com/haroon96/common/Message.java" />
         <option value="$PROJECT_DIR$/src/java/com/haroon96/driver/ServerDriver.java" />
-        <option value="$PROJECT_DIR$/src/java/com/haroon96/server/Server.java" />
         <option value="$PROJECT_DIR$/src/java/com/haroon96/client/Session.java" />
         <option value="$PROJECT_DIR$/src/java/com/haroon96/driver/ClientDriver.java" />
         <option value="$PROJECT_DIR$/src/java/com/haroon96/client/gui/LoginFrame.java" />
         <option value="$PROJECT_DIR$/src/java/com/haroon96/client/gui/ChatFrame.java" />
+        <option value="$PROJECT_DIR$/src/java/com/haroon96/client/ClientDriver.java" />
+        <option value="$PROJECT_DIR$/src/java/com/haroon96/client/ClientMain.java" />
+        <option value="$PROJECT_DIR$/src/java/com/haroon96/server/ServerDriver.java" />
+        <option value="$PROJECT_DIR$/src/java/com/haroon96/server/Server.java" />
       </list>
     </option>
   </component>
@@ -231,14 +225,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="haroon96" type="462c0819:PsiDirectoryNode" />
-              <item name="driver" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Messenger" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Messenger" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="haroon96" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -264,10 +250,16 @@
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="plugins&#9;ACTION&#9;WelcomeScreen.Plugins&#10;plugin&#9;ACTION&#9;WelcomeScreen.Plugins" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.haroon96.server" />
+      <recent name="com.haroon96.client" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -281,19 +273,24 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ClientDriver">
-    <configuration name="ClientDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.haroon96.driver.ClientDriver" />
+  <component name="RunManager" selected="JAR Application.Client">
+    <configuration name="ClientMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.haroon96.client.ClientMain" />
       <module name="Messenger" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
     <configuration name="ServerDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.haroon96.driver.ServerDriver" />
+      <option name="MAIN_CLASS_NAME" value="com.haroon96.server.ServerDriver" />
       <module name="Messenger" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="Client" type="JarApplication" factoryName="JAR Application">
+      <option name="WORKING_DIRECTORY" value="C:\Users\M_har\Documents\IdeaProjects\Messenger" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <module name="Messenger" />
     </configuration>
     <configuration name="&lt;template&gt;" type="JUnit" default="true" selected="false">
       <option name="VM_PARAMETERS" value="-ea" />
@@ -304,12 +301,13 @@
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
     </configuration>
     <list>
+      <item itemvalue="JAR Application.Client" />
       <item itemvalue="Application.ServerDriver" />
-      <item itemvalue="Application.ClientDriver" />
+      <item itemvalue="Application.ClientMain" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ClientDriver" />
+        <item itemvalue="Application.ClientMain" />
         <item itemvalue="Application.ServerDriver" />
       </list>
     </recent_temporary>
@@ -401,31 +399,6 @@
     <entry file="file://$PROJECT_DIR$/src/com/haroon96/client/gui/UIElements.java" />
     <entry file="file://$PROJECT_DIR$/src/com/haroon96/client/gui/LoginFrame.java" />
     <entry file="file://$PROJECT_DIR$/src/com/haroon96/client/Client.java" />
-    <entry file="file://$PROJECT_DIR$/src/java/com/haroon96/driver/ClientDriver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-          <folding>
-            <element signature="e#132#133#0" expanded="true" />
-            <element signature="e#168#169#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/com/haroon96/driver/ServerDriver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/com/haroon96/server/Server.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="592">
-          <caret line="157" selection-start-line="157" selection-end-line="157" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/java/com/haroon96/common/Message.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -489,12 +462,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/com/haroon96/client/ClientMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding>
+            <element signature="e#132#133#0" expanded="true" />
+            <element signature="e#168#169#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/com/haroon96/server/ServerDriver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/com/haroon96/server/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <last-edited>Messenger:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

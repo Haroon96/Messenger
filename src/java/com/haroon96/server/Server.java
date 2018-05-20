@@ -12,11 +12,11 @@ import java.nio.ByteBuffer;
 import java.util.ArrayList;
 
 public class Server {
-	private ArrayList<Message> messagePool;
-	private ArrayList<String> usernames;
-	private ArrayList<ObjectOutputStream> outputStreams;
-	private InetAddress address;
-	private int port;
+
+	public static void main(String[] args) {
+		System.out.println("Server is running...");
+		new Server().startServer();
+	}
 
 	public Server() {
 		messagePool = new ArrayList<>();
@@ -198,5 +198,10 @@ public class Server {
 			}
 		}
 	}
+	private ArrayList<Message> messagePool;
+	private ArrayList<String> usernames;
+	private ArrayList<ObjectOutputStream> outputStreams;
+	private InetAddress address;
+	private int port;
 
 }
