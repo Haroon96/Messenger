@@ -8,5 +8,5 @@ A socket based multi-user messenger application made in Java.
 
 ## Screenshots
 <p align="center">
- <img src="https://github.com/Haroon96/Messenger/raw/gh-pages/img/img.png" alt="Example bot response">
+ <img src="https://github.com/Haroon96/Messenger/raw/gh-pages/img/img.png">
 </p>
