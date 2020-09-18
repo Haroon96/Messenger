@@ -31,7 +31,7 @@ public class Server extends JFrame {
 		usernames = new ArrayList<>();
 		outputStreams = new ArrayList<>();
 		try {
-			address = InetAddress.getByName("224.2.2.3");
+			address = InetAddress.getByName("224.1.1.1");
 		} catch(Exception e) {
 			System.out.println(e);
 		}
@@ -68,12 +68,10 @@ public class Server extends JFrame {
 				String username = new String(bytes).trim();
 				System.out.println("Connecting to " + username + " on " + ip);
 				synchronized (usernames) {
-					if ((usernameExists = usernameTaken(username)) == false) {
+					if (!usernameTaken(username)) {
+						addClient(new Socket(ip, port));
 						usernames.add(username);
 					}
-				}
-				if (!usernameExists) {
-					addClient(new Socket(ip, port));
 				}
 			} catch (Exception e) {
 				System.out.println(e);
@@ -102,11 +100,13 @@ public class Server extends JFrame {
 			in = new ObjectInputStream(socket.getInputStream());
 			out.writeObject(new Message(sb.toString(), null, color));
 			outputStreams.add(out);
-			String username;
-			synchronized (usernames) {
-				username = usernames.get(usernames.size() - 1);
+			if (usernames.size() > 0) {
+				String username;
+				synchronized (usernames) {
+					username = usernames.get(usernames.size() - 1);
+				}
+				sendServerMessage(username + " has joined the conversation.");
 			}
-			sendServerMessage(username + " has joined the conversation.");
 			ClientReceiver cr = new ClientReceiver(in, out);
 			cr.start();
 		} catch (Exception e) {

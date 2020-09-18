@@ -119,7 +119,7 @@ public class ChatFrame extends JFrame {
 		
 		infoLabel.addMouseListener(new MouseAdapter() {
 			public void mouseClicked(MouseEvent e)  {
-				inf.show();
+				inf.showWindow();
 			}
 		});
 	}

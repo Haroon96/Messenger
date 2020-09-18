@@ -101,7 +101,7 @@ public class InformationFrame extends JFrame {
 		connectedUsers.remove(username);
 	}
 
-	public void show() {
+	public void showWindow() {
 		closeWindow();
 		setVisible(true);
 		JLabel jl;

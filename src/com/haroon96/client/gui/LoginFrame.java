@@ -10,6 +10,7 @@ import javax.swing.*;
 import java.io.*;
 import java.net.*;
 import java.nio.ByteBuffer;
+import java.util.Random;
 
 public class LoginFrame extends JFrame {
 
@@ -30,7 +31,7 @@ public class LoginFrame extends JFrame {
 
 		title.setVerticalTextPosition(JLabel.BOTTOM);
 		title.setHorizontalTextPosition(JLabel.CENTER);
-		title.setFont(UIElements.appFont.deriveFont(22f));
+		title.setFont(UIElements.appFont.deriveFont(22f).deriveFont(Font.BOLD));
 		
 		loginBtn = new JButton("Login");
 		loginBtn.setBackground(new Color(50,130,255));
@@ -165,9 +166,10 @@ public class LoginFrame extends JFrame {
 		try {
 			DatagramSocket ds = new DatagramSocket();
 			// multicast address
-			InetAddress address = InetAddress.getByName("224.2.2.3");
+			InetAddress address = InetAddress.getByName("224.1.1.1");
 			int port = 8888;
-			int listenPort = (int)(Math.random() * 40000);
+			int listenPort = (new Random()).nextInt(10000) + 5000;
+			System.out.println("Port "+  listenPort);
 			int usernameLength = username.getBytes().length;
 
 			// allocate a bytebuffer for username and port number
@@ -188,6 +190,7 @@ public class LoginFrame extends JFrame {
 			setVisible(false);
 		}
 		catch (SocketException e){
+			System.out.println(e);
 			prompt.setText("Connection timed-out. Verify whether server is running.");
 		} catch (IOException e) {
 			prompt.setText("Unable to read from server connection.");
